@@ -8,12 +8,16 @@ function App() {
   const [temperatureValue, setTemperatureValue] = useState(10)
 
 function Incrementa (){
+  /*Cada que se presiona el botón+ se llama esta función que incrementa el valor
+  y evalua si el valor llega a más de 30 y de 20 para cambiar el estado de las varibles*/
   setTemperatureValue(temperatureValue+1);
   if (temperatureValue >=30){setTemperatureValue(30)}
   if (temperatureValue >=20){setTemperatureColor('hot')}
 }
 
 function Decrementa (){
+  /*Cada que se presiona el botón+ se llama esta función que decrementa el valor
+  y evalua si el valor llega a menos de 0 y de 20 para cambiar el estado de las varibles*/
   setTemperatureValue(temperatureValue-1);
   if (temperatureValue <=0){setTemperatureValue(0)}
   if (temperatureValue <=20){setTemperatureColor('cold')}
